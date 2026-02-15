@@ -1,0 +1,54 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", "Roboto", "Helvetica", Arial, sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    /* Przezroczyste tło (czarny z 50% przezroczystości) */
+    background-color: rgba(20, 20, 20, 0.5);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* Styl dla modułów po prawej stronie (zegar, cpu itp.) */
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray {
+    padding: 0 10px;
+    margin: 4px 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* WYRAŹNY ZEGAR */
+#clock {
+    color: #00f2ff; /* Jasny turkus */
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgba(0, 242, 255, 0.2); /* Lekka poświata koloru pod zegarem */
+    border: 1px solid rgba(0, 242, 255, 0.3);
+}
+
+/* Styl obszarów roboczych (workspaces) */
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 3px solid #00f2ff;
+}
+
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
