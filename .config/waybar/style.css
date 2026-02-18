@@ -7,14 +7,13 @@
 }
 
 window#waybar {
-    /* Przezroczyste tło (czarny z 50% przezroczystości) */
-    background-color: rgba(20, 20, 20, 0.5);
+    background-color: rgba(30, 20, 25, 0.6); 
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    border-bottom: 2px solid rgba(255, 105, 180, 0.3);
 }
 
-/* Styl dla modułów po prawej stronie (zegar, cpu itp.) */
 #clock,
 #cpu,
 #memory,
@@ -23,32 +22,32 @@ window#waybar {
 #tray {
     padding: 0 10px;
     margin: 4px 2px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 182, 193, 0.1);
     border-radius: 8px;
+    color: #ffb6c1;
 }
 
-/* WYRAŹNY ZEGAR */
 #clock {
-    color: #00f2ff; /* Jasny turkus */
+    color: #ff69b4;
     font-weight: bold;
     font-size: 16px;
-    background-color: rgba(0, 242, 255, 0.2); /* Lekka poświata koloru pod zegarem */
-    border: 1px solid rgba(0, 242, 255, 0.3);
+    background-color: rgba(255, 105, 180, 0.2); 
+    border: 1px solid rgba(255, 105, 180, 0.4);
 }
 
-/* Styl obszarów roboczych (workspaces) */
 #workspaces button {
     padding: 0 8px;
     background-color: transparent;
-    color: #ffffff;
-    border-bottom: 3px solid transparent;
+    color: #ffc0cb;
 }
 
 #workspaces button.active {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-bottom: 3px solid #00f2ff;
+    background-color: rgba(255, 105, 180, 0.3);
+    color: #ffffff;
+    border-bottom: 3px solid #ff69b4;
 }
 
 #workspaces button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 105, 180, 0.2);
+    color: #ffffff;
 }
