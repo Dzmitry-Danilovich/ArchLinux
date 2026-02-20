@@ -7,11 +7,9 @@
 }
 
 window#waybar {
-    background-color: rgba(30, 20, 25, 0.6); 
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
-    border-bottom: 2px solid rgba(255, 105, 180, 0.3);
+    background-color: rgba(10, 15, 30, 0.85); 
+    color: #e0e6ff;
+    border-bottom: 2px solid rgba(255, 40, 40, 0.6); 
 }
 
 #clock,
@@ -20,34 +18,51 @@ window#waybar {
 #network,
 #pulseaudio,
 #tray {
-    padding: 0 10px;
-    margin: 4px 2px;
-    background-color: rgba(255, 182, 193, 0.1);
-    border-radius: 8px;
-    color: #ffb6c1;
+    padding: 0 12px;
+    margin: 4px 4px;
+    background-color: rgba(30, 40, 70, 0.6); 
+    border-radius: 10px;
+    color: #cfd8ff;
+    border: 1px solid rgba(255, 50, 50, 0.2);
 }
 
 #clock {
-    color: #ff69b4;
+    color: #ff3b3b;
     font-weight: bold;
     font-size: 16px;
-    background-color: rgba(255, 105, 180, 0.2); 
-    border: 1px solid rgba(255, 105, 180, 0.4);
+    background-color: rgba(60, 0, 0, 0.6);
+    border: 1px solid rgba(255, 60, 60, 0.6);
 }
 
 #workspaces button {
-    padding: 0 8px;
+    padding: 0 10px;
     background-color: transparent;
-    color: #ffc0cb;
+    color: #aab4ff;
 }
 
 #workspaces button.active {
-    background-color: rgba(255, 105, 180, 0.3);
+    background-color: rgba(255, 30, 30, 0.3);
     color: #ffffff;
-    border-bottom: 3px solid #ff69b4;
+    border-bottom: 3px solid #ff2a2a;
 }
 
 #workspaces button:hover {
-    background-color: rgba(255, 105, 180, 0.2);
+    background-color: rgba(255, 30, 30, 0.2);
     color: #ffffff;
+}
+
+#pulseaudio {
+    color: #ff5a5a;
+}
+
+#network {
+    color: #7aa2ff;
+}
+
+#cpu {
+    color: #ff7676;
+}
+
+#memory {
+    color: #9aa8ff;
 }
